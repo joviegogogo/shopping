@@ -92,6 +92,9 @@
 			handleCategory(item){
 				// 分类跳转
 				console.log(item.name)
+				uni.navigateTo({
+					url:'../../goods/goodslist?name='+item.name
+				})
 			},
 			handlePromition(){
 				uni.showToast({

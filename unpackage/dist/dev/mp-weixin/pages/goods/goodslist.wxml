@@ -1,0 +1,1 @@
+<view class="header"><block wx:for="{{filteByList}}" wx:for-item="target" wx:for-index="index" wx:key="index"><view data-event-opts="{{[['tap',[['handleSelect',[index]]]]]}}" class="{{['target',(target.selected)?'on':'']}}" bindtap="__e">{{''+target.text+''}}</view></block></view>

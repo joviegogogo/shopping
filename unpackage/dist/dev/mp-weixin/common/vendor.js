@@ -8508,7 +8508,7 @@ module.exports = {"_from":"@dcloudio/uni-stat@alpha","_id":"@dcloudio/uni-stat@2
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _default = { "pages": { "pages/tabbar/home/home": { "navigationBarTitleText": "首页" }, "pages/tabbar/cart/cart": { "navigationBarTitleText": "购物车" }, "pages/tabbar/category/category": { "navigationBarTitleText": "分类" }, "pages/tabbar/user/user": { "navigationBarTitleText": "我的" } }, "globalStyle": { "navigationBarTextStyle": "black", "navigationBarTitleText": "jovi", "navigationBarBackgroundColor": "#FFFFFF", "backgroundColor": "#FFFFFF" } };exports.default = _default;
+Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _default = { "pages": { "pages/tabbar/home/home": { "navigationBarTitleText": "首页", "usingComponents": { "page-header": "/pages/tabbar/home/pageHeader" }, "usingAutoImportComponents": {} }, "pages/tabbar/cart/cart": { "navigationBarTitleText": "分类", "usingComponents": {}, "usingAutoImportComponents": {} }, "pages/tabbar/category/category": { "navigationBarTitleText": "分类", "usingComponents": { "page-header": "/pages/tabbar/home/pageHeader" }, "usingAutoImportComponents": {} }, "pages/tabbar/user/user": { "navigationBarTitleText": "我的", "usingComponents": {}, "usingAutoImportComponents": {} }, "pages/goods/goodslist": { "navigationBarTitleText": "" } }, "globalStyle": { "navigationBarTextStyle": "black", "navigationBarTitleText": "jovi", "navigationBarBackgroundColor": "#FFFFFF", "backgroundColor": "#FFFFFF" } };exports.default = _default;
 
 /***/ }),
 /* 8 */
@@ -8726,11 +8726,11 @@ var interfaces = {
   // 获取首页数据
   getMallData: domain + "/api/profiles/mall_list",
   // 获取分类数据
-  getCategory: domain + "api/profiles/category",
+  getCategory: domain + "/api/profiles/category",
   // 获取商品列表数据
-  getGoodsList: domain + 'api/profiles/goodslist',
+  getGoodsList: domain + '/api/profiles/goodslist',
   // 商品详情信息
-  getGoods: domain + "api/profiles/goods" };
+  getGoods: domain + "/api/profiles/goods" };
 
 module.exports = interfaces;
 
