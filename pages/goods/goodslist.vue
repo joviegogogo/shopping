@@ -11,7 +11,7 @@
 	<!-- 商品列表 -->
 	<view class="goods-list">
 		<view class="product-list">
-			<view class="product" v-for="goods in goodsList" :key="goods.goods_id">
+			<view @tap="handleGoods(goods)" class="product" v-for="goods in goodsList" :key="goods.goods_id">
 				<image :src="goods.img" mode="widthFix"></image>
 				<view class="name">{{goods.name}}</view>
 				<view class="info">
@@ -103,6 +103,11 @@
 							this.loadingText = "到底了";
 						}
 					})
+				})
+			},
+			handleGoods(goods){
+				uni.navigateTo({
+					url:'./goods?goodsInfo='+JSON.stringify(goods)
 				})
 			}
 		}

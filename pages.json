@@ -38,7 +38,26 @@
 							"enablePullDownRefresh":true,
 							"onReachBottomDistance":0
 						}
-        }
+        },
+				{
+				    "path" : "pages/goods/goods",
+				    "style" : {
+							"navigationBarTitleText":"商品",
+							"h5":{
+								"titleNView":false
+							},
+							"app-plus":{
+								"titleNView":false,
+								"bounce":"none"
+							}
+						}
+				},
+				{
+				    "path" : "pages/goods/ratings",
+				    "style" : {
+							"navigationBarTitleText":"商品评论"
+						}
+				}
     ],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
